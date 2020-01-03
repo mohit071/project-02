@@ -37,7 +37,7 @@ public class HomeServlet extends HttpServlet {
 		String path = request.getServletPath();
 		if (path.equals("/")){
 			List<Article> articles = articleDao.getAllArticles();
-			request.setAttribute("title", "Branch One");
+			request.setAttribute("title", "Staging");
 			request.setAttribute("articles", articles);
 			request.getRequestDispatcher("/WEB-INF/view/index.jsp").forward(request, response);
 		}
